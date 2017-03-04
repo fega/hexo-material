@@ -6,28 +6,19 @@
   overflow: hidden
 
 .article-meta
-  clearfix()
+  background-color: #eee
+  padding: 16px
+  
 
 .article-date
   @extend $block-caption
   float: left
 
-.article-category
-  float: left
-  line-height: 1em
-  color: #ccc
-  text-shadow: 0 1px #fff
-  margin-left: 8px
-  &:before
-    content: "\2022"
-
-.article-category-link
-  @extend $block-caption
-  margin: 0 12px 1em
-
 .article-header
   padding: 16px
   background-color: #eee
+  background-size: cover
+  border-radius: 2px 2px 0 0
 
 // .article-title
 //   text-decoration: none
@@ -47,11 +38,11 @@
   p, table
     line-height: line-height
     margin: line-height 0
-  h1, h2, h3, h4, h5, h6
-    font-weight: bold
-  h1, h2, h3, h4, h5, h6
-    line-height: line-height-title
-    margin: line-height-title 0
+  // h1, h2, h3, h4, h5, h6
+  //   font-weight: bold
+  // h1, h2, h3, h4, h5, h6
+  //   line-height: line-height-title
+  //   margin: line-height-title 0
   a
     color: color-link
     text-decoration: none
@@ -78,36 +69,36 @@
   td
     border-bottom: 1px solid color-border
     padding: 10px 0
-  blockquote
-    font-family: font-serif
-    font-size: 1.4em
-    margin: line-height 20px
-    text-align: center
-    footer
-      font-size: font-size
-      margin: line-height 0
-      font-family: font-sans
-      cite
-        &:before
-          content: "—"
-          padding: 0 0.5em
-  .pullquote
-    text-align: left
-    width: 45%
-    margin: 0
-    &.left
-      margin-left: 0.5em
-      margin-right: 1em
-    &.right
-      margin-right: 0.5em
-      margin-left: 1em
-  .caption
-    color: color-grey
-    display: block
-    font-size: 0.9em
-    margin-top: 0.5em
-    position: relative
-    text-align: center
+  // blockquote
+  //   font-family: font-serif
+  //   font-size: 1.4em
+  //   margin: line-height 20px
+  //   text-align: center
+  //   footer
+  //     font-size: font-size
+  //     margin: line-height 0
+  //     font-family: font-sans
+  //     cite
+  //       &:before
+  //         content: "—"
+  //         padding: 0 0.5em
+  // .pullquote
+  //   text-align: left
+  //   width: 45%
+  //   margin: 0
+  //   &.left
+  //     margin-left: 0.5em
+  //     margin-right: 1em
+  //   &.right
+  //     margin-right: 0.5em
+  //     margin-left: 1em
+  // .caption
+  //   color: color-grey
+  //   display: block
+  //   font-size: 0.9em
+  //   margin-top: 0.5em
+  //   position: relative
+  //   text-align: center
   // http://webdesignerwall.com/tutorials/css-elastic-videos
   .video-container
     position: relative
@@ -122,20 +113,20 @@
       height: 100%
       margin-top: 0
 
-.article-more-link a
-  display: inline-block
-  line-height: 1em
-  padding: 6px 15px
-  border-radius: 15px
-  background: color-background
-  color: color-grey
-  text-shadow: 0 1px #fff
-  text-decoration: none
-  &:hover
-    background: color-link
-    color: #fff
-    text-decoration: none
-    text-shadow: 0 1px darken(color-link, 20%)
+// .article-more-link a
+//   display: inline-block
+//   line-height: 1em
+//   padding: 6px 15px
+//   border-radius: 15px
+//   background: color-background
+//   color: color-grey
+//   text-shadow: 0 1px #fff
+//   text-decoration: none
+//   &:hover
+//     background: color-link
+//     color: #fff
+//     text-decoration: none
+//     text-shadow: 0 1px darken(color-link, 20%)
 
 .article-footer
   clearfix()
@@ -159,21 +150,21 @@
   &:before
     content: "#"
 
-.article-comment-link
-  float: right
-  &:before
-    content: "\f075"
-    font-family: font-icon
-    padding-right: 8px
+// .article-comment-link
+//   float: right
+//   &:before
+//     content: "\f075"
+//     font-family: font-icon
+//     padding-right: 8px
 
-.article-share-link
-  cursor: pointer
-  float: right
-  margin-left: 20px
-  &:before
-    content: "\f064"
-    font-family: font-icon
-    padding-right: 6px
+// .article-share-link
+//   cursor: pointer
+//   float: right
+//   margin-left: 20px
+//   &:before
+//     content: "\f064"
+//     font-family: font-icon
+//     padding-right: 6px
 
 .article-nav
   padding: 16px

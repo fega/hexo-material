@@ -1,33 +1,12 @@
 {
-  "name": "hexo-material",
+  "name": "hexo-theme-landscape",
   "version": "0.0.1",
+  "private": true,
   "devDependencies": {
     "grunt": "~0.4.2",
     "load-grunt-tasks": "~0.2.0",
     "grunt-git": "~0.2.2",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-copy": "~0.4.1"
-  },
-  "description": "Material design theme for [Hexo], made with materializeCSS",
-  "main": "Gruntfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fega/hexo-material.git"
-  },
-  "keywords": [
-    "hexo",
-    "theme",
-    "hexo-theme",
-    "material-design",
-    "materializeCSS"
-  ],
-  "author": "Fabian Gutierrez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fega/hexo-material/issues"
-  },
-  "homepage": "https://github.com/fega/hexo-material#readme"
+  }
 }

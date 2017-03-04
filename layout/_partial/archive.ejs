@@ -11,21 +11,17 @@
         </div></section>
       <% } %>
       <% last = year; %>
-      <!-- <div class="row">
+      <div class="row" style="padding-top:30px">
         <div class="col s12">
-          <a href="<%- url_for(config.archive_dir + '/' + year) %>"><%= year %></a>
+          <h3><a href="<%- url_for(config.archive_dir + '/' + year) %>"><%= year %></a></h3>
         </div>
-      </div> -->
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a>
-        </div>
-        <div class="archives">
     <% } %>
+    <div class="col s12 m6 l6"> 
     <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
+    </div>
   <% }) %>
   <% if (page.posts.length){ %>
-    </div></section>
+    </div>
   <% } %>
 <% } %>
 <% if (page.total > 1){ %>

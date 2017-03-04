@@ -3,14 +3,13 @@
 @import "_util/mixin"
 @import "_util/grid"
 
-global-reset()
+// global-reset()
 
 html, body, #container
   height: 100%
 
 body
   background: color-background
-  font: font-size font-sans
   -webkit-text-size-adjust: 100%
 aside
   color: rgba(255,255,255,0.5)
@@ -31,60 +30,28 @@ h4
   font-size: 1rem
   line-height: 110%
   margin: .5rem 0 .4rem 0 
-.outer
-  clearfix()
-  max-width: (column-width + gutter-width) * columns + gutter-width
-  margin: 0 auto
-  padding: 0 gutter-width
-
-.inner
-  column(columns)
-
-.left, .alignleft
-  float: left
-
-.right, .alignright
-  float: right
-
-.clear
-  clear: both
-
-#container
-  position: relative
-
-.mobile-nav-on
+nav
+  background: color-navbar-background
+  color: color-navbar-text
+  padding-left: 16px
+  padding-right: 16px
+footer.page-footer
+  background: color-footer-background
+  color: color-footer-text
+.brand-logo
+  white-space: nowrap
   overflow: hidden
-
-#wrap
-  height: 100%
-  width: 100%
-  position: absolute
-  top: 0
-  left: 0
-  transition: 0.2s ease-out
-  z-index: 1
-  background: color-background
-  .mobile-nav-on &
-    left: mobile-nav-width
-
-if sidebar and sidebar isnt bottom
-  #main
-    @media mq-normal
-      column(main-column)
-
-if sidebar is left
-  @media mq-normal
-    #main
-      float: right
-
+  text-overflow: ellipsis
+  max-width 60%
+  
 @import "_extend"
-@import "_partial/header"
+// @import "_partial/header"
 @import "_partial/article"
-@import "_partial/comment"
+// @import "_partial/comment"
 @import "_partial/archive"
-@import "_partial/footer"
+// @import "_partial/footer"
 @import "_partial/highlight"
-@import "_partial/mobile"
+// @import "_partial/mobile"
 
 if sidebar
   @import "_partial/sidebar"
