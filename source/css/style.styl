@@ -1,12 +1,13 @@
 @import "nib"
-@import "_variables_light"
-@import "_util/mixin"
-@import "_util/grid"
+@import "_variables_dark"
+// @import "_util/mixin"
+// @import "_util/grid"
 
 // global-reset()
 
 html, body, #container
   height: 100%
+  color: color-primary-tex
 
 body
   background: color-background
@@ -24,12 +25,12 @@ aside
     overflow: hidden;
     text-overflow: ellipsis;
   li:hover
-    background: rgba(0,0,0,0.027)
+    background: color-hover
   .tag-cloud a
     border-radius: 2px
     padding: 4px
   .tag-cloud a:hover
-    background: rgba(0,0,0,0.027)
+    background: color-hover
     
         
 h1
@@ -61,7 +62,8 @@ footer.page-footer
   overflow: hidden
   text-overflow: ellipsis
   max-width 60%
-  
+div.divider
+  background-color: color-hover
 @import "_extend"
 // @import "_partial/header"
 @import "_partial/article"

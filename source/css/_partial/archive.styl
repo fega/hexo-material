@@ -1,44 +1,46 @@
-.archives-wrap
-  margin: block-margin 0
+// .archives-wrap
+//   margin: block-margin 0
 
-.archives
-  clearfix()
+// .archives
+//   clearfix()
 
-.archive-year-wrap
-  margin-bottom: 1em
+// .archive-year-wrap
+//   margin-bottom: 1em
 
-.archive-year
-  @extend $block-caption
+// .archive-year
+//   @extend $block-caption
 
-.archives
-  column-gap: 10px
-  @media mq-tablet
-    column-count: 2
-  @media mq-normal
-    column-count: 3
+// .archives
+//   column-gap: 10px
+//   @media mq-tablet
+//     column-count: 2
+//   @media mq-normal
+//     column-count: 3
 
-.archive-article
-  avoid-column-break()
+// .archive-article
+//   avoid-column-break()
 
 .archive-article-inner
   @extend $block
   padding: 10px
   margin-bottom: 15px
+  background-color: color-article-background
+  color: color-primary-text
 
-.archive-article-title
-  text-decoration: none
-  font-weight: bold
-  color: color-default
-  transition: color 0.2s
-  line-height: line-height
-  &:hover
-    color: color-link
+// .archive-article-title
+//   text-decoration: none
+//   font-weight: bold
+//   color: color-default
+//   transition: color 0.2s
+//   line-height: line-height
+//   &:hover
+//     color: color-link
 
-.archive-article-footer
-  margin-top: 1em
+// .archive-article-footer
+//   margin-top: 1em
 
 .archive-article-date
-  color: color-grey
+  color: color-secondary-text
   text-decoration: none
   font-size: 0.85em
   line-height: 1em

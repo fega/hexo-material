@@ -1,14 +1,18 @@
 .article
   margin: block-margin 0
+  .card
+    background-color: color-article-background
+    color: color-primary-text
+  h1 
+    color: color-article-title
 
-.article-inner
-  @extend $block
-  overflow: hidden
+// .article-inner
+//   @extend $block
+//   overflow: hidden
 
 .article-meta
-  background-color: #eee
+  background-color: color-article
   padding: 16px
-  background: color-article
   a
     color: color-secondary-text
     text-decoration: none
@@ -22,7 +26,7 @@
 
 .article-header
   padding: 16px
-  background-color: #eee
+  background-color: color-article
   background-size: cover
   border-radius: 2px 2px 0 0
 
@@ -37,13 +41,13 @@
 //     color: color-link
 
 .article-entry
-  @extend $base-style
-  clearfix()
-  color: color-default
+  // @extend $base-style
+  // clearfix()
+  // color: color-primary-text
   padding: 0 article-padding
-  p, table
-    line-height: line-height
-    margin: line-height 0
+  // p, table
+  //   line-height: line-height
+  //   margin: line-height 0
   // h1, h2, h3, h4, h5, h6
   //   font-weight: bold
   // h1, h2, h3, h4, h5, h6
