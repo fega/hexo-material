@@ -1,22 +1,22 @@
-if sidebar is bottom
-  @import "sidebar-bottom"
-else
-  @import "sidebar-aside"
+// if sidebar is bottom
+//   @import "sidebar-bottom"
+// else
+//   @import "sidebar-aside"
 
-.widget
-  @extend $base-style
-  line-height: line-height
-  word-wrap: break-word
-  font-size: 0.9em
-  ul, ol
-    list-style: none
-    margin: 0
-    ul, ol
-      margin: 0 20px
-    ul
-      list-style: disc
-    ol
-      list-style: decimal
+// .widget
+//   @extend $base-style
+//   line-height: line-height
+//   word-wrap: break-word
+//   font-size: 0.9em
+//   ul, ol
+//     list-style: none
+//     margin: 0
+//     ul, ol
+//       margin: 0 20px
+//     ul
+//       list-style: disc
+//     ol
+//       list-style: decimal
 
 .category-list-count
 .tag-list-count
@@ -29,7 +29,17 @@ else
   &:after
     content: ")"
 
-.tagcloud
-  a
-    margin-right: 5px
-    display: inline-block
+.tag-list-item::before, .category-list-item::before, .archive-list-item::before, .recent-list-item::before
+  content: "label"
+  font-family: 'Material Icons'
+  color: sidebar-link-color
+  margin: 4px
+  top: 2px
+  position: relative
+  font-size: 19px
+.category-list-item::before
+  content: "bookmark"
+.archive-list-item::before
+  content: "folder"
+.recent-list-item::before
+  content: "subject"

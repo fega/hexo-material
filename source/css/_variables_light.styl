@@ -1,0 +1,64 @@
+// Config
+support-for-ie = false
+vendor-prefixes = webkit moz ms official
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+// Colors
+// main
+color-default = #555
+color-grey = #999
+color-link = #258fb8
+color-background = #eceff1
+//text-color
+color-primary-text = rgba(0,0,0,0.87)
+color-secondary-text = rgba(0,0,0,0.54)
+color-article = #e3f2fd //#eee
+color-article-background = white
+color-article-title = white
+// footer
+color-footer-background = #0d47a1 
+color-footer-text = white
+// navbar
+color-navbar-background = #0d47a1 
+color-navbar-text = white
+// sidebar
+sidebar-title-color = rgba(0,0,0,0.54) 
+sidebar-text-color = rgba(0,0,0,0.87)
+sidebar-link-color = rgba(0,0,0,0.54)
+//sidelay color
+color-mobile-nav-background = #191919
+//other
+color-twitter = #00aced
+color-facebook = #3b5998
+color-pinterest = #cb2027
+color-google = #dd4b39
+color-code = #eee
+// Fonts
+font-mono ='Roboto Mono', monospace;
+
+font-size = 14px
+line-height = 1.6em
+line-height-title = 1.1em
+
+sidebar = hexo-config("sidebar")
+
+// Layout
+block-margin = 50px
+article-padding = 20px
+mobile-nav-width = 280px
+main-column = 9
+sidebar-column = 3
+
+if sidebar and sidebar isnt bottom
+  _sidebar-column = sidebar-column
+else
+  _sidebar-column = 0
+
+// Grids
+column-width = 80px
+gutter-width = 20px
+columns = main-column + _sidebar-column
+
+// Media queries
+mq-mobile = "screen and (max-width: 479px)"
+mq-tablet = "screen and (min-width: 480px) and (max-width: 767px)"
+mq-normal = "screen and (min-width: 768px)"
