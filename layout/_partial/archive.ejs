@@ -25,10 +25,14 @@
   <% } %>
 <% } %>
 <% if (page.total > 1){ %>
-  <nav id="page-nav">
-    <%- paginator({
-      prev_text: "&laquo; __('prev')",
-      next_text: "__('next') &raquo;"
-    }) %>
-  </nav>
+  <div class="row">
+    <div class="col s12 center">
+      <ul class="pagination">
+        <%- paginator({
+          prev_text: '<i class="material-icons">chevron_left</i>',
+          next_text: '<i class="material-icons">chevron_right</i>'
+        }) %>
+      </ul>
+    </div>
+  </div>
 <% } %>
