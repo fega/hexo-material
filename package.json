@@ -1,11 +1,36 @@
 {
   "name": "hexo-materialize",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "devDependencies": {
     "grunt": "~0.4.2",
     "load-grunt-tasks": "~0.2.0",
     "grunt-git": "~0.2.2",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-copy": "~0.4.1"
-  }
+  },
+  "description": "Material design theme for [Hexo], made with materializeCSS, [Preview](http://fabiangutierrez.co/notes)",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fega/hexo-material.git"
+  },
+  "keywords": [
+    "hexo",
+    "material-design",
+    "themes",
+    "hexo-themes",
+    "materializecss",
+    "materialize",
+    "ejs",
+    "hexo-material"
+  ],
+  "author": "Fabian Gutierrez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fega/hexo-material/issues"
+  },
+  "homepage": "https://github.com/fega/hexo-material#readme"
 }
